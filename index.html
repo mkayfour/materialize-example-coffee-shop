@@ -7,12 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="refresh" content="1"> -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -33,19 +27,63 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
 
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <section class="fnavbar">
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">CafeKing</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="./" class="hvr-grow">Home</a></li>
+              <li>
+                <a href="#" onclick="toggleModal();" class="hvr-grow"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="toggleModal();" class="hvr-grow"
+                  >Coffees</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="toggleModal();" class="hvr-grow"
+                  >Surprise!</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hvr-grow" onclick="toggleModal();"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="./">Home</a></li>
+        <li><a href="#" onclick="toggleModal();">About Us</a></li>
+        <li><a href="#" onclick="toggleModal();">Coffees</a></li>
+        <li><a href="#" onclick="toggleModal();">Surprise!</a></li>
+        <li><a href="#" onclick="toggleModal();">Contact</a></li>
+      </ul>
+    </section>
+
     <script src="js/loaders.js"></script>
 
     <a href="#" onclick="toggleModal();">Click me</a>
@@ -64,12 +102,4 @@
       </div>
     </section>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>

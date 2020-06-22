@@ -1,9 +1,25 @@
-$(document).ready(function(){
-    $('.modal').modal();    
-    $('.parallax').parallax();    
-});
-
-function toggleModal(){
-    let instance = M.Modal.getInstance($('#modal3'));
+$(document).ready(function () {
+    $(".sidenav").sidenav();
+    $(".slider").slider({ full_width: true });
+  
+    $(".myreviews").carousel({
+      numVisible: 7,
+      shift: 55,
+      padding: 55,
+    });
+  
+    $(".modal").modal();
+    $(".parallax").parallax();
+  
+    $(".carousel.carousel-slider.myslider").carousel({
+      fullWidth: true,
+      indicators: true,
+    });
+  });
+  
+  function toggleModal() {
+    var instance = M.Modal.getInstance($("#modal3"));
+  
     instance.open();
-}
+  }
+  
