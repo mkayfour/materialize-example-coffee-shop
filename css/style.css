@@ -15,3 +15,15 @@
     min-height: 380px;
     height: auto;
 }
+
+.icon-coffee{
+   color: #6f4037;
+}
+
+.footer-one{
+    background-color: #6f4037;
+}
+
+.footer-one:hover{
+    background-color: #270903;
+}
